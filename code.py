@@ -10,7 +10,7 @@ def myfun(pric,a):
     d = int(input("How many 20Rs. coins:"))
     price = pric
     pc = (5 * b + 10 * c + 20 * d)
-    if(pc>price):
+    if(pc>=price):
         r_c = pc - price
         print(f'Here is your Rs.{r_c} in change')
     else:
