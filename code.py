@@ -1,7 +1,13 @@
+# By entering flavour as report you will get ingredients content in coffee machine
+
 import time
 
 print("# Welcome to coffee cafe #")
-dct = {"Milk(ml)":70, "Water(ml)":200, "Coffee(g)":75, "Money(RS.)":150}
+dct = {"Milk(ml)":70,
+       "Water(ml)":200,
+       "Coffee(g)":75,
+       "Money(RS.)":150
+       }
 
 def myfun(pric,a):
     print("Please insert coins")
@@ -34,6 +40,11 @@ def fun(a):
 while True:
     a = input("Enter your flavour of coffee(latte/espresso/cappuccino):")
     fun(a)
+    if a == 'report':
+        print(f'Milk: {dct["Milk(ml)"]}ml')
+        print(f'Water: {dct["Water(ml)"]}ml')
+        print(f'Coffee: {dct["Coffee(g)"]}g')
+        print(f'Money: Rs.{dct["Money(RS.)"]}')
     v = input("Do you want to order anything?(Y/N):")
     if v=='y' or v=='Y':
         time.sleep(2)
@@ -42,3 +53,4 @@ while True:
         break
 
 print("// Thank you for visiting //")
+
